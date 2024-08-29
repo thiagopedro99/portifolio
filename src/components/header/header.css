@@ -1,0 +1,130 @@
+.navbar-nav a:hover {
+    color: var(--my-color);
+}
+
+.navbar {
+    width: 100%;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    z-index: 9999;
+
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    border-top: .1px solid rgb(0, 0, 0, 0.15);
+    color: #333;
+}
+
+.navbar-nav {
+    font-weight: bold;
+    color: #333;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px;
+    border-radius: 25px;
+}
+
+
+
+.navbar-brand a {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease-in-out 0.3s;
+}
+
+.navbar-brand a:hover {
+    color: var(--my-color);
+}
+
+
+
+.button--hamburger svg {
+    color: #333;
+    width: 100%;
+
+}
+
+.icon-bars {
+    transform: scaleX(1.3);
+    font-weight: 100 !important;
+}
+
+
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        gap: 3rem;
+    }
+
+}
+
+
+.icon-transition {
+    transition: all 0.3s ease;
+}
+
+.icon-transition.rotate {
+    transform: rotate(180deg);
+}
+
+.active {
+    color: var(--my-color) !important;
+    transition: all 0.3s ease;
+}
+
+
+.nav-link {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 50px;
+    background-color: var(--my-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.active{
+    color: var(--my-color) !important;
+}
+
+.active::after {
+    transform: scaleX(1);
+}
+
+.active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 50px;
+    background-color: var(--my-color);
+    transition: all 0.3s ease;
+}

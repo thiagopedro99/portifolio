@@ -1,0 +1,95 @@
+.home {
+    color: black;
+    background: linear-gradient(to bottom, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.6)), url(../../assets/svg/common-bg.svg);
+    background-position: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+.home-welcome p {
+    color: #333 !important;
+    text-align: center;
+}
+
+.heading-primary {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-weight: 800;
+}
+
+.home-welcome__info {
+    margin: 3rem auto 0 auto;
+    max-width: 50rem;
+}
+
+.text-primary {
+    color: #333;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.projects-btn   {
+    background: var(--my-color);
+    color: #fff;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: transform .3s;
+    padding: 1rem 4.5rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.projects-btn a{
+    color: #fff;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.projects-btn:hover {
+    transform: translateY(-3px);
+    background-color: var(--my-color);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.home-welcome {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70rem;
+    color: #333;
+    background-color: rgb(rgb(255, 255, 255), 0.15);
+    width: 92%;
+}
+
+.home-welcome__social {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: .5rem;
+}
+
+.home-welcome__social--item img {
+   width: 3rem;
+   padding: .5rem;
+}
+
+.home-welcome__social--item {
+    transition: ease-in-out .3s;
+    border-radius: 5px;
+}
+
+.home-welcome__social--item:hover {
+    background: rgba(120, 67, 233, 0.2);
+}

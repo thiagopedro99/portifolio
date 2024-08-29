@@ -1,0 +1,20 @@
+.projetos{
+    color: black;
+    background: #fafafa;
+    background-position: center;
+    z-index: 1;
+    padding: 6rem 0;
+}
+
+.projetos-text {
+    display: block;
+    text-align: center;
+    color: #555;
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 50rem;
+    margin: auto;
+    margin-top: 2rem;
+    line-height: 1.6;
+}
+
