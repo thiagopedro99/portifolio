@@ -15,8 +15,7 @@ const HomeComponent = () => {
                 <h1 className="heading-primary">Hello World, meu nome é Thiago Silva</h1>
                 <div className="home-welcome__info">
                     <p className="text-primary">
-                        Um desenvolvedor da Web orientado a resultados, construindo e gerenciando
-                        sites e aplicativos da Web que levam ao sucesso do produto geral
+                    Sou mineiro, apaixonado por café, música e pelos desafios que a tecnologia traz. Estou sempre em constante aprendizado e evolução na área de desenvolvimento. 
                     </p>
                 </div>
                 <a href="#projetos">

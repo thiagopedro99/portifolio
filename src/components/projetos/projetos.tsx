@@ -18,10 +18,10 @@ const ProjetosComponent = () => {
 
             <div className="row margin-top-5-rem mb-3">
                 <div className="col-12 col-lg-7 text-center mb-5">
-                    <img src="https://via.placeholder.com/200x200" className="align-self-start" alt="" />
+                    <img src="https://placeholder.com/200x200" className="align-self-start" alt="" />
                 </div>
                 <div className="col-12 col-lg-5  text-center text-lg-start">
-                    <h3>Não tem jeito</h3>
+                    <h3>Projeto 1</h3>
                     <p className="projetos-text text-center text-lg-start"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consectetur, soluta tempora error necessitatibus assumenda ullam officia et. Atque alias sapiente qui nemo odit dolores at nobis vitae autem corporis.</p>
                     <Button className="projects-btn btn--med">
                         <a href="">VER PROJETO</a>
@@ -30,10 +30,10 @@ const ProjetosComponent = () => {
             </div>
             <div className="row margin-top-5-rem mb-3">
                 <div className="col-12 col-lg-7 text-center mb-5 img-content">
-                    <img src="https://via.placeholder.com/200x200" className="align-self-start" alt="" />
+                    <img src="https://placeholder.com/200x200" className="align-self-start" alt="" />
                 </div>
                 <div className="col-12 col-lg-5  text-center text-lg-start">
-                    <h3>Não tem jeito</h3>
+                    <h3>Projeto 2</h3>
                     <p className="projetos-text text-center text-lg-start"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consectetur, soluta tempora error necessitatibus assumenda ullam officia et. Atque alias sapiente qui nemo odit dolores at nobis vitae autem corporis.</p>
                     <Button className="projects-btn btn--med">
                         <a href="">VER PROJETO</a>
