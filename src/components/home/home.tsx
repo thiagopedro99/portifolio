@@ -25,13 +25,13 @@ const HomeComponent = () => {
 
             <div className="home-welcome__social d-none d-lg-block">
                 <div className="home-welcome__social--item">
-                    <a href="https://www.linkedin.com/in/thiago-pedro-da-silva/" target="_blank"><img src={linkedinImg} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/thiago-pedro-da-silva/" target="_blank"><img src={linkedinImg} alt="logo do linkedin" /></a>
                 </div>
                 <div className="home-welcome__social--item">
-                    <a href="https://github.com/thiagopedro99" target="_blank"><img src={githubImg} alt="" /></a>
+                    <a href="https://github.com/thiagopedro99" target="_blank"><img src={githubImg} alt="ogo do github" /></a>
                 </div>
                 <div className="home-welcome__social--item">
-                    <a href="https://github.com/thiagopedro99" target="_blank"><img src={gmailImg} alt="" /></a>
+                    <a href="mailto:thiago.gefa@gmail.com" target="_blank"><img src={gmailImg} alt="logo do gmail" /></a>
                 </div>
             </div>
 
