@@ -19,7 +19,7 @@ const HeaderComponent = () => {
   return (
     <Navbar bg="light" expand="lg" className="position-fixed paddind--top-and-bottom-1">
       <Navbar.Brand className='ps-3 ps-lg-5'>
-        <a href="app" onClick={handleImageClick}>
+        <a href="#home" onClick={handleImageClick}>
           <img src="https://avatars.githubusercontent.com/u/69489913?v=4" alt="" />
 
           THIAGO SILVA
