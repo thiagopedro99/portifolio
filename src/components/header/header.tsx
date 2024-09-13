@@ -32,7 +32,7 @@ const HeaderComponent = () => {
         <Nav.Link href="#home">HOME</Nav.Link>
         <Nav.Link href="#sobre">SOBRE</Nav.Link>
         <Nav.Link href="#projetos">PROJETOS</Nav.Link>
-        <Nav.Link href="#">CONTATO</Nav.Link>
+        <Nav.Link href="#contato">CONTATO</Nav.Link>
       </Nav>
       <Offcanvas show={menuOpen} onHide={openMenu} placement="end" className="d-lg-none w-100 border-none">
         <Offcanvas.Header closeButton>
@@ -53,7 +53,7 @@ const HeaderComponent = () => {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link href="#">CONTATO</Nav.Link>
+              <Nav.Link href="#contato">CONTATO</Nav.Link>
             </Nav.Item>
           </Nav>
         </Offcanvas.Body>

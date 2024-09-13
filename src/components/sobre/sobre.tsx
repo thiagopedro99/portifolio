@@ -24,9 +24,12 @@ const SobreComponent = () => {
                   Tenho interesse em trabalhar como  <strong>Desenvolvedor Front-End, Back-End ou FullStack.</strong></p>
               </div>
               <div className="sobre__info--item__text">
-                <Button className="projects-btn btn--med">
-                  CONTATO
-                </Button>
+
+                <a href="#contato">
+                  <Button className="projects-btn btn--med">
+                    CONTATO
+                  </Button>
+                </a>
               </div>
 
             </div>
