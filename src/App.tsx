@@ -1,25 +1,20 @@
-import './App.css'
-import Header from './components/header/header'
+import './App.css';
+import Header from './components/header/header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './components/home/home';
-import SobreComponent from './components/sobre/sobre';
-import Projetos from './components/projetos/projetos';
 import FooterComponent from './components/footer/footer';
-import ContatosComponent from './components/contato/contato.tsx';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Main from './pages/main/main';
 
 function App() {
-
   return (
-    <>
-      <Header></Header>
-      <Home></Home>
-      <SobreComponent></SobreComponent>
-      <Projetos></Projetos>
-      <ContatosComponent></ContatosComponent>
-      <FooterComponent></FooterComponent>
-    </>
-  )
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
+      <FooterComponent />
+    </Router>
+  );
 }
 
-export default App
+export default App;
