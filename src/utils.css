@@ -97,3 +97,30 @@ body {
 .margin-bottom-5 {
     margin-bottom: 15rem;
 }
+
+.btn_default   {
+    background: var(--my-color);
+    color: #fff;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: transform .3s;
+    padding: 1rem 4.5rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.btn_default a{
+    color: #fff;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.btn_default:hover {
+    transform: translateY(-3px);
+    background-color: var(--my-color);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}

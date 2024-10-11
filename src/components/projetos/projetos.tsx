@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const ProjetosComponent = () => {
 
     let projetos = [
-        { id: 1, title: "Projeto 1", description: "Descrição do Projeto 1", image: "https://placeholder.com/200x200" },
-        { id: 2, title: "Projeto 2", description: "Descrição do Projeto 2", image: "https://placeholder.com/200x200" },
+        { id: 1, title: "Projeto 1", description: "Descrição do Projeto 1", image: "https://placeholder.com/300x300" },
+        { id: 2, title: "Projeto 2", description: "Descrição do Projeto 2", image: "https://placeholder.com/300x300" },
     ];
 
     return (
@@ -21,17 +21,22 @@ const ProjetosComponent = () => {
                     </p>
                 </div>
                 {projetos.map((projeto) => (
-                    <div key={projeto.id}>
-                        <h3>{projeto.title}</h3>
-                        <p className="projetos-text">{projeto.description}</p>
-                        <Button className="projects-btn btn--med">
-                            <Link to={`/projetos/${projeto.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                VER PROJETO
+                    <div key={projeto.id} className="projetos__item mt-5 ">
+                        <div>
+                            <img src={projeto.image} alt={projeto.title} />
+                        </div>
+                        <div>
+                            <h3 className="mb-5">{projeto.title}</h3>
+                            <p className="projetos-text ">{projeto.description}</p>
+
+                            <Link to={`/projeto/${projeto.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <Button className="btn_default btn--med">
+                                    VER PROJETO
+                                </Button>
                             </Link>
-                        </Button>
+                        </div>
                     </div>
                 ))}
-
             </Container>
         </section>
 

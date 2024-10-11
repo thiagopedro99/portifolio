@@ -26,7 +26,7 @@ const SobreComponent = () => {
               <div className="sobre__info--item__text">
 
                 <a href="#contato">
-                  <Button className="projects-btn btn--med">
+                  <Button className="btn_default btn--med">
                     CONTATO
                   </Button>
                 </a>

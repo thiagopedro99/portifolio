@@ -27,7 +27,7 @@ const ContatosComponent = () => {
                             <Form.Control className="contato_form-input" as="textarea" rows={5} placeholder="Digite sua mensagem" required />
                         </Form.Group>
 
-                        <Button className="projects-btn btn--med" type="submit">
+                        <Button className="btn_default btn--med" type="submit">
                             SUBMIT
                         </Button>
                     </Form>

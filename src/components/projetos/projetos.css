@@ -1,4 +1,4 @@
-.projetos{
+.projetos {
     color: black;
     background: #fafafa;
     background-position: center;
@@ -8,7 +8,7 @@
 
 .projetos-text {
     display: block;
-    text-align: center;
+    text-align: start;
     color: #555;
     font-size: 1rem;
     font-weight: 400;
@@ -18,3 +18,8 @@
     line-height: 1.6;
 }
 
+.projetos__item {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}

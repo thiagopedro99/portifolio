@@ -2,17 +2,21 @@
 import "../../utils.css";
 import "./projetoDetail.css";
 import HeaderComponent from "../../components/header/header";
-import FooterComponent from "../../components/footer/footer";
-const ProjetosComponent = () => {
+import ContatosComponent from "../../components/contato/contato";
+import { Container } from "react-bootstrap";
+const ProjetoDetail = () => {
 
 
     return (
         <>
             <HeaderComponent />
+
+            <Container></Container>
+
+            <ContatosComponent />
             
-            <FooterComponent />
         </>
     );
 };
 
-export default ProjetosComponent;
+export default ProjetoDetail;

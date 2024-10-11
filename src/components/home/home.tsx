@@ -1,5 +1,4 @@
 
-import "../../utils.css";
 import { Container, Button } from 'react-bootstrap';
 import linkedinImg from '../../assets/svg/linkedin-dark.svg';
 import githubImg from '../../assets/svg/github-dark.svg';
@@ -19,7 +18,7 @@ const HomeComponent = () => {
                     </p>
                 </div>
                 <a href="#projetos">
-                    <Button className="projects-btn">POJETOS</Button>
+                    <Button className="btn_default">PROJETOS</Button>
                 </a>
             </Container>
 

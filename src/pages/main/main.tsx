@@ -9,12 +9,11 @@ import ContatosComponent from '../../components/contato/contato';
 function Main() {
     return (
         <>
-            <Header />
+            
             <Home></Home>
             <SobreComponent></SobreComponent>
             <ProjetosComponent></ProjetosComponent>
             <ContatosComponent></ContatosComponent>
-            <FooterComponent />
         </>
     );
 }
