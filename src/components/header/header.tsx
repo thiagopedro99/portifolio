@@ -9,7 +9,7 @@ import "./header.css";
 
 const HeaderComponent = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { navLinks, isProjetoDetail } = useNavigation(); // Verifica se estamos na página de detalhe do projeto
+  const { navLinks } = useNavigation(); // Verifica se estamos na página de detalhe do projeto
 
   const openMenu = () => setMenuOpen(!menuOpen);
 
