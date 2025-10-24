@@ -113,7 +113,6 @@ const Projects = ({ data }: ProjectsProps) => {
                   <Button
                     $variant="primary"
                     $size="sm"
-                    as="a"
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -127,7 +126,6 @@ const Projects = ({ data }: ProjectsProps) => {
                   <Button
                     $variant="outline"
                     $size="sm"
-                    as="a"
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"

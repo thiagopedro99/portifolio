@@ -52,9 +52,7 @@ const Hero = ({ data, onContactClick }: HeroProps) => {
                             <Button
                                 $variant="outline"
                                 $size="lg"
-                                as="a"
                                 href={data.cvUrl}
-                                download
                             >
                                 <Download size={20} />
                                 Download CV

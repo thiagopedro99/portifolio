@@ -23,7 +23,7 @@ const Skills = ({ data }: SkillsProps) => {
         <TechGrid>
           {data.technologies.map((tech) => (
             <TechItem key={tech.name}>
-              <TechIcon $color={tech.color}>
+              <TechIcon>
                 <img 
                   src={tech.icon} 
                   alt={tech.name}
