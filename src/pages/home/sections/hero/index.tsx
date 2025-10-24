@@ -12,13 +12,10 @@ import {
     SocialLinks,
     SocialLink,
 } from './styles';
-import { HeroData } from './types';
 import { JSX } from 'react';
+import { HeroProps } from './types';
 
-interface HeroProps {
-    data: HeroData;
-    onContactClick: () => void;
-}
+
 
 const Hero = ({ data, onContactClick }: HeroProps) => {
     const socialIcons: Record<string, JSX.Element> = {

@@ -13,3 +13,8 @@ export interface HeroData {
   cvUrl?: string;
   socialLinks: SocialLink[];
 }
+
+export interface HeroProps {
+    data: HeroData;
+    onContactClick: () => void;
+}
