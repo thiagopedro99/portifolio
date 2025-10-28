@@ -145,3 +145,120 @@ export const TechName = styled.span`
     font-size: ${({ theme }) => theme.fonts.sizes.xs};
   }
 `;
+
+/* Estilos do Modal */
+export const ModalTechIcon = styled.div`
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.colors.background};
+  border-radius: ${({ theme }) => theme.borderRadius.xl};
+  padding: ${({ theme }) => theme.spacing.md};
+  border: 2px solid ${({ theme }) => theme.colors.border};
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+`;
+
+export const CategoryBadge = styled.span`
+  display: inline-flex;
+  align-items: center;
+  gap: ${({ theme }) => theme.spacing.xs};
+  padding: ${({ theme }) => `${theme.spacing.xs} ${theme.spacing.sm}`};
+  background-color: ${({ theme }) => theme.colors.primary}20;
+  color: ${({ theme }) => theme.colors.primary};
+  border-radius: ${({ theme }) => theme.borderRadius.full};
+  font-size: ${({ theme }) => theme.fonts.sizes.sm};
+  font-weight: ${({ theme }) => theme.fonts.weights.medium};
+`;
+
+export const ProjectCount = styled.span`
+  display: inline-flex;
+  align-items: center;
+  padding: ${({ theme }) => `${theme.spacing.xs} ${theme.spacing.sm}`};
+  background-color: ${({ theme }) => theme.colors.borderLight};
+  color: ${({ theme }) => theme.colors.text.secondary};
+  border-radius: ${({ theme }) => theme.borderRadius.full};
+  font-size: ${({ theme }) => theme.fonts.sizes.sm};
+  font-weight: ${({ theme }) => theme.fonts.weights.medium};
+`;
+
+export const ModalDescription = styled.p`
+  font-size: ${({ theme }) => theme.fonts.sizes.base};
+  color: ${({ theme }) => theme.colors.text.secondary};
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+`;
+
+export const ProjectsTitle = styled.h3`
+  font-size: ${({ theme }) => theme.fonts.sizes.xl};
+  font-weight: ${({ theme }) => theme.fonts.weights.semibold};
+  color: ${({ theme }) => theme.colors.text.primary};
+  margin-bottom: ${({ theme }) => theme.spacing.lg};
+  text-align: center;
+`;
+
+export const EmptyState = styled.div`
+  text-align: center;
+  padding: ${({ theme }) => `${theme.spacing['2xl']} ${theme.spacing.lg}`};
+  background-color: ${({ theme }) => theme.colors.borderLight};
+  border-radius: ${({ theme }) => theme.borderRadius.lg};
+  color: ${({ theme }) => theme.colors.text.secondary};
+
+  p {
+    margin: ${({ theme }) => theme.spacing.xs} 0;
+  }
+`;
+
+export const ProjectCard = styled.div`
+  animation: ${fadeInUp} 0.4s ease-out both;
+  transition: transform ${({ theme }) => theme.transitions.fast};
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0.2s; }
+  &:nth-child(3) { animation-delay: 0.3s; }
+  &:nth-child(4) { animation-delay: 0.4s; }
+`;
+
+export const ProjectTitle = styled.h4`
+  font-size: ${({ theme }) => theme.fonts.sizes.lg};
+  font-weight: ${({ theme }) => theme.fonts.weights.semibold};
+  color: ${({ theme }) => theme.colors.text.primary};
+  margin: 0;
+`;
+
+export const ProjectDescription = styled.p`
+  font-size: ${({ theme }) => theme.fonts.sizes.sm};
+  color: ${({ theme }) => theme.colors.text.secondary};
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+`;
+
+export const TechTags = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: ${({ theme }) => theme.spacing.xs};
+`;
+
+export const TechTag = styled.span`
+  padding: ${({ theme }) => `${theme.spacing.xs} ${theme.spacing.sm}`};
+  background-color: ${({ theme }) => theme.colors.primaryLight}30;
+  color: ${({ theme }) => theme.colors.primary};
+  border-radius: ${({ theme }) => theme.borderRadius.md};
+  font-size: ${({ theme }) => theme.fonts.sizes.xs};
+  font-weight: ${({ theme }) => theme.fonts.weights.medium};
+`;
