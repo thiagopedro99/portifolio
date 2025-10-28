@@ -5,6 +5,7 @@ import GlobalStyles from "@styles/globalStyles";
 import Router from "@routes/index";
 import { ToastProvider } from "@components/toast";
 import { useAppStore } from "@stores/App/appStore";
+import FloatingThemeToggle from "@components/floatingThemeToggle";
 
 const App = () => {
   const theme = useAppStore((state) => state.theme);
@@ -15,6 +16,7 @@ const App = () => {
       <GlobalStyles />
       <ToastProvider>
         <Router />
+        <FloatingThemeToggle />
       </ToastProvider>
     </ThemeProvider>
   );
