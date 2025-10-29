@@ -88,26 +88,36 @@ interface ProjectsProps {
 }
 
 const Projects = ({ data }: ProjectsProps) => {
+
+  const handleGithubClick = (githubUrl: string) => {
+    window.open(githubUrl, '_blank');
+  };
+
+  const handleExternalLinkClick = (url: string) => {
+    window.open(url, '_blank');
+  };
+
+
   return (
     <ProjectsSection id="projects">
       <Container $maxWidth="xl">
         <SectionTitle>{data.title}</SectionTitle>
-        
+
         <Grid $columns={3} $gap="2rem">
           {data.projects.map((project) => (
             <ProjectCard key={project.id} $variant="elevated">
               <ProjectImage $image={project.image} />
-              
+
               <ProjectTitle>{project.title}</ProjectTitle>
-              
+
               <ProjectDescription>{project.description}</ProjectDescription>
-              
+
               <TechTags>
                 {project.technologies.map((tech) => (
                   <TechTag key={tech}>{tech}</TechTag>
                 ))}
               </TechTags>
-              
+
               <Flex $gap="0.5rem">
                 {project.liveUrl && (
                   <Button
@@ -115,18 +125,20 @@ const Projects = ({ data }: ProjectsProps) => {
                     $size="sm"
                     href={project.liveUrl}
                     target="_blank"
+                    onClick={() => handleExternalLinkClick(project.liveUrl || '')}
                     rel="noopener noreferrer"
                   >
                     <ExternalLink size={16} />
                     Ver Projeto
                   </Button>
                 )}
-                
+
                 {project.githubUrl && (
                   <Button
                     $variant="outline"
                     $size="sm"
                     href={project.githubUrl}
+                    onClick={() => handleGithubClick(project.githubUrl)}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

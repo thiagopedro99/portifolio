@@ -87,19 +87,21 @@ export const portfolioData = {
                 description: 'MongoDB é um banco de dados NoSQL orientado a documentos que permite armazenar e recuperar dados de forma flexível e escalável.'
             },
             {
-                name: 'Figma',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
-                color: '#F24E1E',
-                category: 'design',
-                description: 'Figma é uma plataforma de design colaborativo e gratuito que permite criar e compartilhar protótipos de interfaces de usuário.'
+               name: 'Angular',
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+               color: '#DD0031',
+               category: 'frontend',
+               description: 'Angular é um framework de desenvolvimento web de código aberto que permite criar aplicativos web dinâmicos e escaláveis.'
             },
             {
-                name: 'VS Code',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
-                color: '#007ACC',
-                category: 'tools',
-                description: 'VS Code é um editor de código-fonte desenvolvido pela Microsoft que oferece suporte a muitas extensões e ferramentas para desenvolvimento de software.'
+                name: "Java",
+                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+                color: "#007ACC",
+                category: "backend",
+                description: "Java é uma linguagem de programação orientada a objetos desenvolvida pela Oracle Corporation."
             },
+
+
         ],
     },
     projects: {
@@ -107,12 +109,11 @@ export const portfolioData = {
         projects: [
             {
                 id: '1',
-                title: 'E-commerce Platform',
-                description:
-                    'Plataforma completa de e-commerce com carrinho, checkout e painel administrativo.',
+                title: 'Template React + styled-components',
+                description: 'Template React + styled-components e componentes prontos.',
                 technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
                 liveUrl: 'https://projeto1.com',
-                githubUrl: 'https://github.com/seu-usuario/projeto1',
+                githubUrl: 'https://github.com/thiagopedro99/template-react',
                 featured: true,
             },
             {

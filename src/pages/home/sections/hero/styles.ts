@@ -45,7 +45,7 @@ export const HeroContent = styled.div`
 `;
 
 export const Greeting = styled.p`
-  font-size: ${({ theme }) => theme.fonts.sizes.lg};
+  font-size: ${({ theme }) => theme.fonts.sizes["3xl"]};
   color: ${({ theme }) => theme.colors.primary};
   font-weight: ${({ theme }) => theme.fonts.weights.semibold};
   margin: 0;

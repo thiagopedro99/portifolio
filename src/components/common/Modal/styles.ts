@@ -81,6 +81,7 @@ export const ModalTitle = styled.h2`
 export const CloseButton = styled.button`
   display: flex;
   align-items: center;
+  margin-left: auto;
   justify-content: center;
   padding: ${({ theme }) => theme.spacing.sm};
   color: ${({ theme }) => theme.colors.text.secondary};
