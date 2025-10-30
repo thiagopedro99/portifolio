@@ -18,84 +18,84 @@ export const portfolioData = {
         technologies: [
             {
                 name: 'React',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+                icon: 'icons/react.svg',
                 color: '#61DAFB',
                 category: 'frontend',
                 description: 'React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.'
             },
             {
                 name: 'TypeScript',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+                icon: 'icons/typescript.svg',
                 color: '#3178C6',
                 category: 'frontend',
                 description: 'TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft que adiciona tipagem estática opcional à JavaScript.'
             },
             {
                 name: 'JavaScript',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+                icon: 'icons/javascript-original.svg',
                 color: '#F7DF1E',
                 category: 'frontend',
                 description: 'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fracamente tipada.'
             },
             {
                 name: 'Node.js',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+                icon: 'icons/nodejs-original.svg',
                 color: '#339933',
                 category: 'backend',
                 description: 'Node.js é uma plataforma de desenvolvimento de aplicativos baseada na plataforma JavaScript, que permite a execução de código JavaScript fora de um navegador web.'
             },
             {
                 name: 'HTML',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+                icon: 'icons/html5-original.svg',
                 color: '#E34F26',
                 category: 'frontend',
                 description: 'HTML é uma linguagem de marcação utilizada para estruturar e apresentar conteúdo na web.'
             },
             {
                 name: 'CSS',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+                icon: 'icons/css3-original.svg',
                 color: '#1572B6',
                 category: 'frontend',
                 description: 'CSS é uma linguagem de estilo utilizada para descrever a apresentação de documentos HTML e XML.'
             },
             {
                 name: 'Git',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+                icon: 'icons/git-original.svg',
                 color: '#F05032',
                 category: 'tools',
                 description: 'Git é um sistema de controle de versão distribuído que permite rastrear e gerenciar mudanças em arquivos de código-fonte.'
             },
             {
-                name: 'Docker',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
-                color: '#2496ED',
-                category: 'tools',
-                description: 'Docker é uma plataforma de desenvolvimento e execução de aplicativos baseada na plataforma Linux.'
+                name: 'Bootstrap',
+                icon: 'icons/bootstrap-original.svg',
+                color: '#7952B3',
+                category: 'frontend',
+                description: 'Bootstrap é uma biblioteca front-end para desenvolvimento de interfaces de usuário responsivas e mobile-first.'
             },
             {
                 name: 'PostgreSQL',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+                icon: 'icons/postgresql-original.svg',
                 color: '#4169E1',
                 category: 'backend',
                 description: 'PostgreSQL é um sistema de gerenciamento de banco de dados relacional desenvolvido pela PostgreSQL Global Development Group.'
             },
             {
                 name: 'MongoDB',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+                icon: 'icons/mongodb-original.svg',
                 color: '#47A248',
                 category: 'backend',
                 description: 'MongoDB é um banco de dados NoSQL orientado a documentos que permite armazenar e recuperar dados de forma flexível e escalável.'
             },
             {
                name: 'Angular',
-               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+               icon: 'icons/angularjs-original.svg',
                color: '#DD0031',
                category: 'frontend',
                description: 'Angular é um framework de desenvolvimento web de código aberto que permite criar aplicativos web dinâmicos e escaláveis.'
             },
             {
                 name: "Java",
-                icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+                icon: "icons/java-original.svg",
                 color: "#007ACC",
                 category: "backend",
                 description: "Java é uma linguagem de programação orientada a objetos desenvolvida pela Oracle Corporation."

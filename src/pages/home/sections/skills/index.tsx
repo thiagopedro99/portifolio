@@ -1,7 +1,7 @@
 // src/pages/home/sections/skills/index.tsx
 import { useState } from 'react';
 import { Container, Modal, Card, Flex, Grid, Button } from '@components/common';
-import { ExternalLink, Github, Package } from 'lucide-react';
+import { ExternalLink, FolderGit2, Github, Package } from 'lucide-react';
 import {
   SkillsSection,
   SectionTitle,
@@ -110,13 +110,12 @@ const Skills = ({ data }: SkillsProps) => {
             {/* Descrição */}
             <ModalDescription>{selectedTech.description}</ModalDescription>
 
-            {/* Linha divisória */}
-            <div style={{ height: '1px', backgroundColor: 'var(--border-color)' }} />
+            
 
             {/* Projetos usando esta tecnologia */}
             <div>
               <ProjectsTitle>
-                💼 Projetos usando {selectedTech.name}
+                <FolderGit2 size={24} />  Projetos usando {selectedTech.name}
               </ProjectsTitle>
 
               {filteredProjects.length > 0 ? (

@@ -115,8 +115,8 @@ export const TechIcon = styled.div<{ $color?: string }>`
     width: 100%;
     height: 100%;
     object-fit: contain;
-    filter: ${({ theme, $color }) => 
-      theme.colors.background === '#121212' && !$color ? 'brightness(0.8)' : 'none'};
+    filter: ${({ theme, $color }) =>
+    theme.colors.background === '#121212' && !$color ? 'brightness(0.8)' : 'none'};
   }
 
   svg {
@@ -197,8 +197,12 @@ export const ModalDescription = styled.p`
 `;
 
 export const ProjectsTitle = styled.h3`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: ${({ theme }) => theme.spacing.sm};
   font-size: ${({ theme }) => theme.fonts.sizes.xl};
-  font-weight: ${({ theme }) => theme.fonts.weights.semibold};
+  font-weight: ${({ theme }) => theme.fonts.weights.regular};
   color: ${({ theme }) => theme.colors.text.primary};
   margin-bottom: ${({ theme }) => theme.spacing.lg};
   text-align: center;
