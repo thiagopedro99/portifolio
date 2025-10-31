@@ -1,4 +1,12 @@
+// src/components/navbar/types.ts
 export interface MenuItem {
-  path: string;
-  name: string;
+  label: string;
+  path?: string;
+  id?: string;
+  showOnRoutes?: string[];
+}
+
+export interface NavbarProps {
+  logo?: string;
+  menuItems?: MenuItem[];
 }

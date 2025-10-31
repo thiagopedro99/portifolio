@@ -1,5 +1,5 @@
 // src/components/navbar/styles.ts
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
 export const Nav = styled.nav`
@@ -29,12 +29,18 @@ export const DesktopMenu = styled.nav`
   }
 `;
 
-export const MenuLink = styled(NavLink)`
+// Estilo compartilhado usando css helper
+const menuItemBaseStyles = css`
   color: ${({ theme }) => theme.colors.text.primary};
   font-weight: ${({ theme }) => theme.fonts.weights.medium};
   position: relative;
   padding: ${({ theme }) => `${theme.spacing.sm} 0`};
   transition: color ${({ theme }) => theme.transitions.fast};
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
@@ -55,6 +61,14 @@ export const MenuLink = styled(NavLink)`
   }
 `;
 
+export const MenuLink = styled(NavLink)`
+  ${menuItemBaseStyles}
+`;
+
+export const MenuButton = styled.button`
+  ${menuItemBaseStyles}
+`;
+
 export const MobileMenuButton = styled.button`
   display: flex;
   align-items: center;
@@ -66,7 +80,6 @@ export const MobileMenuButton = styled.button`
     display: none;
   }
 `;
-
 
 export const Overlay = styled.div<{ $isOpen: boolean }>`
   position: fixed;
@@ -111,12 +124,21 @@ export const CloseButton = styled.button`
   margin-bottom: ${({ theme }) => theme.spacing.md};
 `;
 
-export const MobileMenuLink = styled(NavLink)`
+// Estilo compartilhado para mobile menu items usando css helper
+const mobileMenuItemBaseStyles = css`
   color: ${({ theme }) => theme.colors.text.primary};
   font-weight: ${({ theme }) => theme.fonts.weights.medium};
   padding: ${({ theme }) => `${theme.spacing.md} 0`};
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   transition: color ${({ theme }) => theme.transitions.fast};
+  background: none;
+  border: none;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
@@ -125,4 +147,13 @@ export const MobileMenuLink = styled(NavLink)`
   &.active {
     color: ${({ theme }) => theme.colors.primary};
   }
+`;
+
+export const MobileMenuLink = styled(NavLink)`
+  ${mobileMenuItemBaseStyles}
+`;
+
+// RENOMEADO para evitar conflito de nome
+export const MobileMenuScrollButton = styled.button`
+  ${mobileMenuItemBaseStyles}
 `;
