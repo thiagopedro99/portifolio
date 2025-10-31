@@ -35,6 +35,10 @@ const Skills = ({ data }: SkillsProps) => {
     setModalOpen(true);
   };
 
+  const handleExternalLinkClick = (url: string) => {
+    window.open(url, '_blank');
+  }
+
   const handleCloseModal = () => {
     setModalOpen(false);
     setTimeout(() => setSelectedTech(null), 300); // Delay para animação do modal
@@ -43,8 +47,8 @@ const Skills = ({ data }: SkillsProps) => {
   // Filtrar projetos que usam a tecnologia selecionada
   const filteredProjects = selectedTech
     ? portfolioData.projects.projects.filter((project) =>
-        project.technologies.includes(selectedTech.name)
-      )
+      project.technologies.includes(selectedTech.name)
+    )
     : [];
 
   const categoryLabels: Record<string, string> = {
@@ -110,7 +114,7 @@ const Skills = ({ data }: SkillsProps) => {
             {/* Descrição */}
             <ModalDescription>{selectedTech.description}</ModalDescription>
 
-            
+
 
             {/* Projetos usando esta tecnologia */}
             <div>
@@ -143,7 +147,7 @@ const Skills = ({ data }: SkillsProps) => {
                               <Button
                                 $variant="primary"
                                 $size="sm"
-                                href={project.liveUrl}
+                                onClick={() => handleExternalLinkClick(project.liveUrl)}
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
@@ -156,7 +160,7 @@ const Skills = ({ data }: SkillsProps) => {
                               <Button
                                 $variant="outline"
                                 $size="sm"
-                                href={project.githubUrl}
+                                onClick={() => handleExternalLinkClick(project.githubUrl)}
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >

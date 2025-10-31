@@ -1,3 +1,4 @@
+
 export const portfolioData = {
     hero: {
         name: 'Thiago Silva',
@@ -107,14 +108,15 @@ export const portfolioData = {
                 category: 'frontend',
                 description: 'Angular é um framework de desenvolvimento web de código aberto que permite criar aplicativos web dinâmicos e escaláveis.'
             },
-            {
-                name: "Java",
-                icon: "icons/java-original.svg",
-                color: "#007ACC",
-                category: "backend",
-                description: "Java é uma linguagem de programação orientada a objetos desenvolvida pela Oracle Corporation."
-            },
+ 
 
+            {
+                name: "styled-components",
+                icon: "icons/styledcomponents-original.svg",
+                color: "#DB7093",
+                category: "frontend",
+                description: "styled-components é uma biblioteca de estilização para React que permite a criação de estilos dinâmicos em componentes de React."
+            }
 
         ],
     },
@@ -125,8 +127,8 @@ export const portfolioData = {
                 id: '1',
                 title: 'Template React + styled-components',
                 description: 'Template React + styled-components e componentes prontos.',
-                technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
-                liveUrl: 'https://projeto1.com',
+                technologies: ['React', 'TypeScript', 'Node.js', 'styled-components'],
+                liveUrl: 'https://template-react-blush.vercel.app',
                 githubUrl: 'https://github.com/thiagopedro99/template-react',
                 featured: true,
             },
