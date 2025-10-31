@@ -24,7 +24,7 @@ import {
   TechTags,
 } from './styles';
 import { SkillsProps, Technology } from './types';
-import { portfolioData } from '../../constants';
+import { portfolioData } from '@shared/constants';
 
 const Skills = ({ data }: SkillsProps) => {
   const [selectedTech, setSelectedTech] = useState<Technology | null>(null);

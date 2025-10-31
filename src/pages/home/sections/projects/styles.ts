@@ -1,5 +1,26 @@
+// src/pages/home/sections/projects/styles.ts
 import { Card } from "@components/common";
-import { styled } from "styled-components";
+import { keyframes, styled } from "styled-components";
+
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const float = keyframes`
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+`;
 
 export const ProjectsSection = styled.section`
   padding: ${({ theme }) => `${theme.spacing['3xl']} 0`};
@@ -13,6 +34,7 @@ export const SectionTitle = styled.h2`
   text-align: center;
   margin-bottom: ${({ theme }) => theme.spacing['2xl']};
   position: relative;
+  animation: ${fadeInUp} 0.6s ease-out;
 
   &::after {
     content: '';
@@ -25,11 +47,13 @@ export const SectionTitle = styled.h2`
   }
 `;
 
-export const ProjectCard = styled(Card)`
+export const ProjectCard = styled(Card)<{ $index?: number }>`
   height: 100%;
   display: flex;
   flex-direction: column;
   transition: transform ${({ theme }) => theme.transitions.normal};
+  animation: ${fadeInUp} 0.6s ease-out both;
+  animation-delay: ${({ $index = 0 }) => $index * 0.1}s;
 
   &:hover {
     transform: translateY(-8px);
@@ -40,13 +64,18 @@ export const ProjectImage = styled.div<{ $image?: string }>`
   width: 100%;
   height: 200px;
   background: ${({ $image, theme }) =>
-        $image
-            ? `url(${$image})`
-            : `linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.primaryLight})`};
+    $image
+      ? `url(${$image})`
+      : `linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.primaryLight})`};
   background-size: cover;
   background-position: center;
   border-radius: ${({ theme }) => theme.borderRadius.lg};
   margin-bottom: ${({ theme }) => theme.spacing.md};
+  transition: transform ${({ theme }) => theme.transitions.normal};
+
+  ${ProjectCard}:hover & {
+    animation: ${float} 2s ease-in-out infinite;
+  }
 `;
 
 export const ProjectTitle = styled.h3`
@@ -78,4 +107,11 @@ export const TechTag = styled.span`
   border-radius: ${({ theme }) => theme.borderRadius.md};
   font-size: ${({ theme }) => theme.fonts.sizes.sm};
   font-weight: ${({ theme }) => theme.fonts.weights.medium};
+  transition: all ${({ theme }) => theme.transitions.fast};
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.text.inverse};
+    transform: scale(1.05);
+  }
 `;

@@ -25,7 +25,7 @@ const Hero = ({ data, onContactClick }: HeroProps) => {
     };
 
     return (
-        <HeroSection>
+        <HeroSection id='hero'>
             <Container $maxWidth="sm">
                 <HeroContent>
                     <Greeting>Olá! Meu nome é</Greeting>
