@@ -27,6 +27,8 @@ export default defineConfig({
       '@hooks': resolve(__dirname, './src/hooks'),
       '@pages': resolve(__dirname, './src/pages'),
       '@services': resolve(__dirname, './src/services'),
+      '@shared': resolve(__dirname, './src/shared'),
+      '@types': resolve(__dirname, './src/types'),
     },
   },
   build: {

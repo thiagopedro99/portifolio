@@ -30,7 +30,9 @@
       "@hooks/*": ["hooks/*"],
       "@pages/*": ["pages/*"],
       "@utils/*": ["utils/*"],
-      "@services/*": ["services/*"]
+      "@services/*": ["services/*"],
+      "@types/*": ["types/*"],
+      "@shared/*": ["shared/*"]
     }
   },
   "include": ["src"]
