@@ -36,7 +36,7 @@ const ComponentsDemo = () => {
   };
 
   return (
-    <Layout pageTitle="Demo de Componentes">
+    <Layout>
       <Flex $direction="column" $gap="2rem">
 
         {/* Buttons */}
