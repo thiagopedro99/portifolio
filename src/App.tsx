@@ -3,7 +3,6 @@ import { ThemeProvider } from "styled-components";
 import { themes } from "@styles/themes";
 import GlobalStyles from "@styles/globalStyles";
 import Router from "@routes/index";
-import { ToastProvider } from "@components/toast";
 import { useAppStore } from "@stores/App/appStore";
 import FloatingThemeToggle from "@components/floatingThemeToggle";
 
@@ -14,10 +13,8 @@ const App = () => {
   return (
     <ThemeProvider theme={currentTheme}>
       <GlobalStyles />
-      <ToastProvider>
         <Router />
         <FloatingThemeToggle />
-      </ToastProvider>
     </ThemeProvider>
   );
 };
