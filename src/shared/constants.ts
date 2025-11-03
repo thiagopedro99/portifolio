@@ -28,7 +28,7 @@ export const portfolioData = {
         year: new Date().getFullYear(),
     },
     skills: {
-        title: 'Tecnologias que Utilizo',
+        title: 'Habilidades',
         subtitle: 'Ferramentas e linguagens que domino no dia a dia',
         technologies: [
             {
