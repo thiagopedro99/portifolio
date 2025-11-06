@@ -130,6 +130,7 @@ export const portfolioData = {
                 technologies: ['React', 'TypeScript', 'Node.js', 'styled-components'],
                 liveUrl: 'https://template-react-blush.vercel.app',
                 githubUrl: 'https://github.com/thiagopedro99/template-react',
+                imgUrl: 'https://github.com/thiagopedro99/template-react/blob/main/public/preview.png?raw=true',
                 featured: true,
             },
             {
