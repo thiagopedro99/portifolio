@@ -92,4 +92,15 @@ ${({ $size = 'md', theme }) => {
     outline: 2px solid ${({ theme }) => theme.colors.primary};
     outline-offset: 2px;
   }
+
+   @media (max-width: 768px) {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
 `;
+
