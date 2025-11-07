@@ -28,7 +28,7 @@ const Projects = ({ data }: ProjectsProps) => {
 
   return (
     <ProjectsSection id="projects">
-      <Container $maxWidth="xl">
+      <Container $maxWidth="2xl">
         <SectionTitle>{data.title}</SectionTitle>
 
         <Grid $columns={3} $gap="2rem">
@@ -50,7 +50,7 @@ const Projects = ({ data }: ProjectsProps) => {
                 {project.liveUrl && (
                   <Button
                     $variant="primary"
-                    $size="sm"
+                    $size="md"
                     onClick={() => handleExternalLinkClick(project.liveUrl || '')}
                   >
                     <ExternalLink size={16} />
@@ -61,7 +61,7 @@ const Projects = ({ data }: ProjectsProps) => {
                 {project.githubUrl && (
                   <Button
                     $variant="outline"
-                    $size="sm"
+                    $size="md"
                     onClick={() => handleGithubClick(project.githubUrl)}
                   >
                     <Github size={16} />
