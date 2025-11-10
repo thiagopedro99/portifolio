@@ -108,7 +108,7 @@ export const portfolioData = {
                 category: 'frontend',
                 description: 'Angular é um framework de desenvolvimento web de código aberto que permite criar aplicativos web dinâmicos e escaláveis.'
             },
- 
+
 
             {
                 name: "styled-components",
@@ -133,15 +133,17 @@ export const portfolioData = {
                 image: 'https://github.com/thiagopedro99/template-react/blob/master/public/preview.png?raw=true',
                 featured: true,
             },
+
             {
                 id: '2',
-                title: 'Task Manager',
-                description:
-                    'Aplicativo de gerenciamento de tarefas com drag-and-drop e sincronização em tempo real.',
-                technologies: ['React', 'Firebase', 'Material-UI'],
-                liveUrl: 'https://projeto2.com',
-                githubUrl: 'https://github.com/seu-usuario/projeto2',
+                title: 'Portfolio Template',
+                description: 'Se tem interesse em recriar este portfolio, você pode baixar o template no github.',
+                image: 'https://github.com/thiagopedro99/portfolio/blob/master/public/preview.png?raw=true',
+                technologies: ['React', 'Styled Components', 'Vite', 'TypeScript', 'Node.js'],
+                liveUrl: 'https://portifolio-omega-topaz-82.vercel.app/',
+                githubUrl: 'https://github.com/thiagopedro99/portifolio',
             },
+
             {
                 id: '3',
                 title: 'Weather App',
@@ -170,12 +172,12 @@ export const portfolioData = {
             },
             {
                 id: '6',
-                title: 'Portfolio Template',
+                title: 'Task Manager',
                 description:
-                    'Template moderno e responsivo para portfólios de desenvolvedores.',
-                technologies: ['React', 'Styled Components', 'Vite'],
-                liveUrl: 'https://projeto6.com',
-                githubUrl: 'https://github.com/seu-usuario/projeto6',
+                    'Aplicativo de gerenciamento de tarefas com drag-and-drop e sincronização em tempo real.',
+                technologies: ['React', 'Firebase', 'Material-UI'],
+                liveUrl: 'https://projeto2.com',
+                githubUrl: 'https://github.com/seu-usuario/projeto2',
             },
         ],
     },
