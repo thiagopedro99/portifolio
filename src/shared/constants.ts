@@ -138,7 +138,7 @@ export const portfolioData = {
                 id: '2',
                 title: 'Portfolio Template',
                 description: 'Se tem interesse em recriar este portfolio, você pode baixar o template no github.',
-                image: 'https://github.com/thiagopedro99/portfolio/blob/main/public/preview.png?raw=true',
+                image: 'https://raw.githubusercontent.com/thiagopedro99/portifolio/refs/heads/main/public/preview.png',
                 technologies: ['React', 'Styled Components', 'Vite', 'TypeScript', 'Node.js'],
                 liveUrl: 'https://portifolio-omega-topaz-82.vercel.app/',
                 githubUrl: 'https://github.com/thiagopedro99/portifolio',
