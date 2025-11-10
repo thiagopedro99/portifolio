@@ -80,7 +80,8 @@ export const TechItem = styled.div`
   gap: ${({ theme }) => theme.spacing.md};
   padding: ${({ theme }) => `${theme.spacing.md}`};
   background-color: ${({ theme }) => theme.colors.background};
-  width: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: ${({ theme }) => theme.borderRadius.xl};
   border: 2px solid ${({ theme }) => theme.colors.border};
   transition: all ${({ theme }) => theme.transitions.normal};
