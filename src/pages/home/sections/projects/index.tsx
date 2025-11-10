@@ -28,7 +28,7 @@ const Projects = ({ data }: ProjectsProps) => {
 
   return (
     <ProjectsSection id="projects">
-      <Container $maxWidth="2xl">
+      <Container $maxWidth="xl">
         <SectionTitle>{data.title}</SectionTitle>
 
         <Grid $columns={3} $gap="2rem">
